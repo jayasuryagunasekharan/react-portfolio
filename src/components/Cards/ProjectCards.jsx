@@ -122,6 +122,19 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
+const ProjectDescription = ({ description }) => {
+    const descriptionList = description ? description.split('.').filter(sentence => sentence.trim().length > 0) : [];
+    return (
+      <Description>
+        <ul>
+          {descriptionList.map((sentence, index) => (
+            <li key={index}>{sentence.trim()}.</li>
+          ))}
+        </ul>
+      </Description>
+    )
+}
+
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
@@ -134,7 +147,7 @@ const ProjectCards = ({project,setOpenModal}) => {
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
+                <ProjectDescription description={project?.description} />
             </Details>
             <Members>
                 {project.member?.map((member) => (
