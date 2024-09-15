@@ -405,8 +405,8 @@ export const Bio = {
         image:"https://dallasnews.imgix.net/1493745261-IMG_4512.JPG",
         tags: ["ReactJS", "SQL", "JavaScript", "HTML", "CSS"],
       category: "Software Engineer",
-      github: "",  // Add GitHub link if available
-      webapp: "",  // Add web app link if available
+      github: "https://github.com/jayasuryagunasekharan/arlington-sprouts-store",  // Add GitHub link if available
+      webapp: "https://arlington-sprouts-store.vercel.app",  // Add web app link if available
     },
     {
       id: 2,
