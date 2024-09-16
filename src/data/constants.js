@@ -410,7 +410,7 @@ export const Bio = {
         tags: ["ReactJS", "SQL", "JavaScript", "HTML", "CSS"],
       category: "Software Engineer",
       github: "https://github.com/jayasuryagunasekharan/arlington-sprouts-store",  // Add GitHub link if available
-      webapp: "https://arlington-sprouts-store.vercel.app",  // Add web app link if available
+      webapp: "https://arlington-sprouts-store-qeziel5fy.vercel.app/",  // Add web app link if available
     },
     {
       id: 2,
