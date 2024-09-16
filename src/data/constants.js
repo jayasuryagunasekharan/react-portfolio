@@ -437,14 +437,14 @@ export const Bio = {
     },
     {
         id: 4,
-        title: "Image Search Engine",
+        title: "Search Engine",
         date: "Sep. 2023 - Oct. 2023",
         description:
           "Designed multi-threaded server side and client infrastructure using Python to reduce response time by 20%. Employed advanced keyword-based image retrieval and ranking functionalities, enhancing search accuracy by 15%. Containerized the search engine using Docker for scalability and stability.",
         image:"https://www.webalive.com.au/wp-content/uploads/2013/08/An-Introduction-to-Search-Engines.jpg",
         tags: ["Python", "Docker"],
         category: "Software Engineer",
-        github: "https://github.com/jayasuryagunasekharan/image-search-engine-hypervisor",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/search-engine",  // Add GitHub link if available
         webapp: "",  // Add web app link if available
       },
       {
