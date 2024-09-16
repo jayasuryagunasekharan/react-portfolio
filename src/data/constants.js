@@ -433,8 +433,8 @@ export const Bio = {
         image:"https://miro.medium.com/v2/resize:fit:685/1*UDOnzqoTnWUQoPP8pZUXgQ.png",
         tags: ["Python", "AWS"],
       category: "Machine Learning / AI",
-      github: "",  // Add GitHub link if available
-      webapp: "",  // Add web app link if available
+      github: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",  // Add GitHub link if available
+      webapp: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",  // Add web app link if available
     },
     {
         id: 4,
