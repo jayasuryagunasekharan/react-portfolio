@@ -426,15 +426,14 @@ export const Bio = {
     },
     {
       id: 3,
-      title: "Image Captioning",
+      title: "Image Captioning System",
       date: "June 2023 - Jul. 2023",
-      description:
-        "Optimized code running on EC2 instances to improve efficiency. Restructured Lambda functions to handle 100k image data more efficiently, achieving 15% reduction in processing time for premises solutions.",
-        image:"https://miro.medium.com/v2/resize:fit:685/1*UDOnzqoTnWUQoPP8pZUXgQ.png",
-        tags: ["Python", "AWS"],
+      description: "Developed a deep learning model to automatically generate descriptive captions for images using a CNN-LSTM architecture. Implemented VGG16 and Keras for feature extraction and caption generation. Trained on the Flickr8k dataset and optimized data processing pipeline to handle 100k+ images, reducing processing time by 15%.",
+      image: "https://miro.medium.com/v2/resize:fit:685/1*UDOnzqoTnWUQoPP8pZUXgQ.png",
+      tags: ["Python", "TensorFlow", "Keras", "NumPy", "NLTK", "AWS EC2", "AWS Lambda"],
       category: "Machine Learning / AI",
-      github: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",  // Add GitHub link if available
-      webapp: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",  // Add web app link if available
+      github: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",
+      webapp: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing"
     },
     {
         id: 4,
