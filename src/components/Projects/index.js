@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle';
+import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider, LoadMoreButton } from './ProjectsStyle';
 import ProjectCard from '../Cards/ProjectCards';
 import { projects } from '../../data/constants';
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState('all');
+  const [visibleProjects, setVisibleProjects] = useState(9);
   
+  const loadMore = () => {
+    setVisibleProjects(prev => prev + 9);
+  };
+
+  const filteredProjects = toggle === 'all' 
+    ? projects 
+    : projects.filter((item) => item.category === toggle);
+
   return (
     <Container id="projects">
       <Wrapper>
@@ -13,47 +22,22 @@ const Projects = ({ openModal, setOpenModal }) => {
         <Desc>
           Here are some of my projects spanning across domains such as Software Engineering, Data Science, Data Mining, and Machine Learning.
         </Desc>
-        <ToggleButtonGroup >
-          {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-            :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'Software Engineer' ?
-            <ToggleButton active value="Software Engineer" onClick={() => setToggle('Software Engineer')}>SOFTWARE</ToggleButton>
-            :
-            <ToggleButton value="Software Engineer" onClick={() => setToggle('Software Engineer')}>SOFTWARE</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'Embedded' ?
-            <ToggleButton active value="Embedded" onClick={() => setToggle('Embedded')}>EMBEDDED</ToggleButton>
-            :
-            <ToggleButton value="Embedded" onClick={() => setToggle('Embedded')}>EMBEDDED</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'Data Science / Data Analysis' ?
-            <ToggleButton active value="Data Science / Data Analysis" onClick={() => setToggle('Data Science / Data Analysis')}>DATA</ToggleButton>
-            :
-            <ToggleButton value="Data Science / Data Analysis" onClick={() => setToggle('Data Science / Data Analysis')}>DATA</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'machine learning' ?
-            <ToggleButton active value="machine learning" onClick={() => setToggle('Machine Learning / AI')}>MACHINE LEARNING</ToggleButton>
-            :
-            <ToggleButton value="machine learning" onClick={() => setToggle('Machine Learning / AI')}>MACHINE LEARNING</ToggleButton>
-          }
+        <ToggleButtonGroup>
+          {['all', 'Software Engineer', 'Embedded', 'Data Science / Data Analysis', 'Machine Learning / AI'].map((category) => (
+            <React.Fragment key={category}>
+              <ToggleButton 
+                active={toggle === category} 
+                value={category} 
+                onClick={() => setToggle(category)}
+              >
+                {category.toUpperCase()}
+              </ToggleButton>
+              {category !== 'Machine Learning / AI' && <Divider />}
+            </React.Fragment>
+          ))}
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
-          ))}
-          {projects.filter((item) => item.category === toggle).map((project) => (
+          {filteredProjects.slice(0, visibleProjects).map((project) => (
             <ProjectCard
               key={project.id}
               project={project}
@@ -62,6 +46,9 @@ const Projects = ({ openModal, setOpenModal }) => {
             />
           ))}
         </CardContainer>
+        {visibleProjects < filteredProjects.length && (
+          <LoadMoreButton onClick={loadMore}>Load More</LoadMoreButton>
+        )}
       </Wrapper>
     </Container>
   );

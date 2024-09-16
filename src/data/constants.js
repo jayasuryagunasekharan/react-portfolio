@@ -417,7 +417,7 @@ export const Bio = {
         image:"https://blog.ongig.com/wp-content/uploads/2020/09/People-and-diversity-Underrepresented-Groups-1024x576.jpg",
         tags: ["ReactJS", "SQL", "JavaScript", "Node.js"],
       category: "Software Engineer",
-      github: "https://github.com/jayasuryagunasekharan?tab=repositories",  // Add GitHub link if available
+      github: "https://job-board-liart-six.vercel.app/",  // Add GitHub link if available
       webapp: "https://jxg0437.uta.cloud/",  // Add web app link if available
     },
     {
