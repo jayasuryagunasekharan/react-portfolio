@@ -1,20 +1,27 @@
+// src/data/constants.js
 export const Bio = {
-    name: "Jayasurya Gunasekharan",
-    roles: [
-      "Software Engineer",
-      "ML Enthusiast",
-      "Problem Solver",
-    ],
-    description:
-      "I am a motivated and adaptable individual with a keen interest in tackling new challenges head-on. Driven by a strong passion for continuous learning, I am dedicated to achieving outstanding outcomes in every endeavor. As a proactive problem-solver with a positive outlook and a growth mindset, I am poised to make a significant impact and accomplish ambitious goals. I am always seeking opportunities where I can challenge myself, utilizing my strong leadership, teamwork, and time management abilities to contribute meaningfully to software projects. I am eager to learn from experienced engineering team members and grow professionally.",
-    github: "https://github.com/jayasuryagunasekharan",
-    resume:
-      "https://jayasuryagunasekharan.github.io/",
-    linkedin: "https://www.linkedin.com/in/jayasuryaguna/",
-    twitter: "https://x.com/surya_luffy",
-    insta: "https://www.instagram.com/surya_luffy/",
-    facebook: "https://www.facebook.com/jayasurya.guna",
-  };
+  name: "Jayasurya Gunasekharan",
+  roles: [
+    "Software Engineer",
+    "ML Enthusiast",
+    "Problem Solver",
+  ],
+  description:
+    "Enthusiastic and inquisitive computer science student (Masters in Computer Science & Bachelors in Electrical Engineering) skilled in full stack, analytics and machine learning skills. Seeking opportunities to use my coding, strong leadership, teamwork, and time management skills to make a meaningful contribution to a software project while growing and learning from experienced engineering team members.",
+  github: "https://github.com/jayasuryagunasekharan",
+  resume:
+    "https://jayasuryagunasekharan.github.io/",
+  linkedin: "https://www.linkedin.com/in/jayasuryaguna/",
+  twitter: "https://x.com/surya_luffy",
+  insta: "https://www.instagram.com/surya_luffy/",
+  facebook: "https://www.facebook.com/jayasurya.guna",
+  hobbies: [
+    "Playing soccer",
+    "Anime and F1(Ferrari)",
+    "Playing videogames",
+    "Love Traveling (ping me if you are good at planning trips :P)"
+  ],
+};
   
   export const skills = [
     {
@@ -302,6 +309,13 @@ export const Bio = {
       desc: [
         "Achieved $300/week reduction in inventory costs by creating machine learning model in Python to predict inventory, sales, and shipment.",
       ],
+      achievements: [
+        "Managed budget, sales, and inventory, consistently achieving weekly profit targets.",
+        "Implemented efficient inventory management strategies, resulting in significant cost savings.",
+        "Provided exceptional customer support and service, enhancing customer satisfaction and loyalty.",
+        "Conducted thorough data analysis to optimize business operations and decision-making processes.",
+        "Maintained and improved system performance, ensuring smooth business operations."
+    ],
       skills: [
         "Python",
         "Machine Learning",
@@ -323,6 +337,10 @@ export const Bio = {
         "Leveraged agile development methodologies, with strong focus on TDD and CI/CD, resulting in 40% reduction of deployment errors and 30% improvement in system reliability.",
         "Managed installation, upgrade, patching and client-centric troubleshooting of 100+ Salesforce implementations.",
         "Integrated concise insights and statistics using D3.js, Tableau, custom reports, and dashboards to improve product development and user experience, resulting in more informed decision-making.",
+      ],
+      achievements: [
+        "Awarded Employee of the Month for outstanding performance in the year 2021.",
+        "Led a team of 2 developers to successfully deploy a critical client centric functionalities."
       ],
       skills: [
         "Salesforce",
@@ -348,6 +366,9 @@ export const Bio = {
       desc: [
         "Centralized SQL database using local indexing/partitioning enhancing data accessibility and reducing retrieval times, resulting in 30% improvement of query performance across the organization.",
       ],
+      achievements: [
+        "Completed 3 months of training with a high score and got a return offer to join the company coming year."
+      ],
       skills: [
         "SQL",
         "Database Management",
@@ -364,6 +385,9 @@ export const Bio = {
       date: "May 2019 - Aug 2019",
       desc: [
         "Reduced noise levels by 45% in audio files incorporating power spectral density and zero cut-off noise reduction techniques using Python. Achieved a 13% file compression while maintaining audio quality.",
+      ],
+      achievements: [
+        "completed a research paper on the topic of noise reduction in audio files using Python and presented it at the IEEE conference."
       ],
       skills: [
         "Python",
@@ -382,20 +406,90 @@ export const Bio = {
     {
       id: 0,
       img: "https://cdn.web.uta.edu/-/media/feature/header/uta-logo.ashx?revision=c825792e-43a2-4634-98b1-bb046df48ed1&h=194&w=493&la=en&hash=EA7D894E6230FC53078511D11F24A050",
-      school: "University of Texas Arlington",
+      school: "University of Texas at Arlington",
       date: "Aug 2022 - May 2024",
+      degree: "Master of Science - MS, Computer Science",
       grade: "3.54/4.00",
-      desc: "I pursued a Master's degree in Computer Science with minors in Big Data Management and Data Sciences, as well as Deep Learning, at the University of Texas Arlington. During my studies, I focused on advanced topics in computer science, including machine learning, data management, and deep learning. Activities and societies: Game Development Club UTA, Transaction Specialist, Parking AmbassadorActivities and societies: Game Development Club UTA, Transaction Specialist, Parking Ambassador Coursework: Distributed Systems (CSE-5306), Neural Networks (CSE-5368), Artificial Intelligence (CSE-5360), Machine Learning (CSE-6363), Computer Vision (CSE-6367), Cloud Computing & Big Data (CSE-6332), Database Systems (CSE-5330), Data Analysis and Modelling Techniques (CSE-5301), Design and Analysis of Algorithms (CSE-5311), Data Mining (CSE-5334)",
-      degree: "MS in Computer Science",
+      activities: "Game Development Club UTA, Transaction Specialist, Parking Ambassador",
+      coursework: [
+        "Distributed Systems (CSE-5306)",
+        "Neural Networks (CSE-5368)",
+        "Artificial Intelligence (CSE-5360)",
+        "Machine Learning (CSE-6363)",
+        "Computer Vision (CSE-6367)",
+        "Cloud Computing & Big Data (CSE-6332)",
+        "Database Systems (CSE-5330)",
+        "Data Analysis and Modelling Techniques (CSE-5301)",
+        "Design and Analysis of Algorithms (CSE-5311)",
+        "Data Mining (CSE-5334)",
+      ],
+      skills: [
+        "Analytical Skills",
+        "Model Training",
+        "Software Development",
+        "Distributed Systems",
+        "Statistical Analysis",
+        "React.js",
+        "Data Structures",
+        "Computer Science",
+        "Large-scale Data Processing",
+        "Algorithms",
+        "API Development",
+        "Visualization",
+        "Front-End Development",
+        "Large Language Models (LLM)",
+        "HTML5",
+        "Documentation",
+        "Causal Inference",
+        "JavaScript",
+        "Communication",
+        "Structured Documentation",
+        "Back-End Web Development",
+        "Containerization",
+        "Cascading Style Sheets (CSS)",
+        "Full-Stack Development",
+        "Real Time System Design",
+        "Data Wrangling",
+        "Supervised Learning",
+      ],
     },
     {
       id: 1,
       img: "data:image/png;base64,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",
       school: "Savitribai Phule Pune University",
       date: "Aug 2016 - May 2020",
-      grade: "3.70/4.00",
-      desc: "I completed my Bachelor's degree in Electronics and Telecommunication Engineering at Savitribai Phule Pune University. My coursework covered a wide range of subjects, including electronics, telecommunications, and engineering fundamentals.",
-      degree: "BE in Electronics and Telecommunication",
+      degree: "Bachelor of Engineering - BE, Electronics and Communications Engineering",
+      grade: "8.45/10.00",
+      activities: "Supervised the students and coordinated with authorities to schedule activities throughout the academic year. Taught and mentored high school and undergrad students with their coursework (Math, Science). Participated in various inter-school, inter-college and inter-department competitions. Handled campaigning and marketing strategies for reaching out to citywide colleges for events like technical fests.",
+      coursework: [
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Internet of Things",
+        "Computer Networks",
+      ],
+      skills: [
+        "Analytical Skills",
+        "Java",
+        "C",
+        "Software Development",
+        "Python (Programming Language)",
+        "Statistical Analysis",
+        "MATLAB",
+        "C++",
+        "Data Structures",
+        "C (Programming Language)",
+        "API Development",
+        "Visualization",
+        "Documentation",
+        "Causal Inference",
+        "Communication",
+        "Structured Documentation",
+        "Back-End Web Development",
+        "Full-Stack Development",
+        "SQL",
+      ],
     },
   ];
 
@@ -409,8 +503,8 @@ export const Bio = {
         image:"https://dallasnews.imgix.net/1493745261-IMG_4512.JPG",
         tags: ["ReactJS", "SQL", "JavaScript", "HTML", "CSS"],
       category: "Software Engineer",
-      github: "https://github.com/jayasuryagunasekharan/arlington-sprouts-store",  // Add GitHub link if available
-      webapp: "https://arlington-sprouts-store-qeziel5fy.vercel.app/",  // Add web app link if available
+      github: "https://github.com/jayasuryagunasekharan/arlington-sprouts-store", 
+      webapp: "https://arlington-sprouts-store.vercel.app/",
     },
     {
       id: 2,
@@ -421,8 +515,8 @@ export const Bio = {
         image:"https://blog.ongig.com/wp-content/uploads/2020/09/People-and-diversity-Underrepresented-Groups-1024x576.jpg",
         tags: ["ReactJS", "SQL", "JavaScript", "Node.js"],
       category: "Software Engineer",
-      github: "https://job-board-liart-six.vercel.app/",  // Add GitHub link if available
-      webapp: "https://jxg0437.uta.cloud/",  // Add web app link if available
+      github: "https://job-board-liart-six.vercel.app/", 
+      webapp: "https://jxg0437.uta.cloud/",
     },
     {
       id: 3,
@@ -444,7 +538,7 @@ export const Bio = {
         image:"https://www.webalive.com.au/wp-content/uploads/2013/08/An-Introduction-to-Search-Engines.jpg",
         tags: ["Python", "Docker"],
         category: "Software Engineer",
-        github: "https://github.com/jayasuryagunasekharan/search-engine",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/search-engine",
         webapp: "",  // Add web app link if available
       },
       {

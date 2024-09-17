@@ -235,3 +235,39 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 `;
+
+
+export const HobbiesSection = styled.div`
+  margin-top: 24px;
+`;
+
+export const HobbiesTitle = styled.h4`
+  font-size: 20px;
+  color: ${({ theme }) => theme.text_primary};
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+export const HobbiesList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const HobbyItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const HobbyIcon = styled.span`
+  color: ${({ theme }) => theme.primary};
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+`;

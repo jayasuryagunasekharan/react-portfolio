@@ -1,148 +1,174 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaGraduationCap, FaCalendarAlt, FaStar, FaBook, FaTools, FaCircle } from 'react-icons/fa'
 
-const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
-
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-`
-
+// Styled Components
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+    padding: 20px 24px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     transition: all 0.3s ease-in-out;
-    &:hover{
+    background-color: ${({ theme }) => theme.card_background};
+
+    &:hover {
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
     }
+
     @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
+        width: 100%;
+        padding: 16px;
     }
-
-    &:hover ${Document}{
-        display: flex;
-    }
-
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-    border: 0.1px solid #854CE6;
 `
 
-const Top = styled.div`
-    width: 100%;
+const Header = styled.div`
     display: flex;
-    gap: 12px
+    align-items: center;
+    gap: 16px;
 `
 
-const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
+const SchoolLogo = styled.img`
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
 `
 
-const Body = styled.div`
-    width: 100%;
+const SchoolInfo = styled.div`
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 `
 
+const SchoolName = styled.h3`
+    font-size: 24px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.text_primary};
+    margin: 0;
+`
 
-const Name = styled.div`
+const Degree = styled.p`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
-`
-
-const Degree = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+    color: ${({ theme }) => theme.text_secondary};
+    margin: 4px 0;
 `
 
 const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: ${({ theme }) => theme.text_secondary};
 `
 
 const Grade = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: ${({ theme }) => theme.text_primary};
 `
 
+const SectionTitle = styled.h4`
+    font-size: 18px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+`
 
+const Activities = styled.p`
+    font-size: 16px;
+    color: ${({ theme }) => theme.text_secondary};
+    margin: 0;
+`
+
+const CourseworkList = styled.ul`
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+`
+
+const CourseworkItem = styled.li`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: ${({ theme }) => theme.text_primary};
+`
+
+const BulletPoint = styled(FaCircle)`
+    font-size: 8px;
+    color: ${({ theme }) => theme.primary};
+`
+
+const SkillsList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+`
+
+const SkillBadge = styled.span`
+    background-color: ${({ theme }) => theme.skill_background};
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: ${({ theme }) => theme.text_primary};
+`
 
 const EducationCard = ({ education }) => {
     return (
         <Card>
-            <Top>
-                <Image src={education.img} />
-                <Body>
-                    <Name>{education.school}</Name>
+            <Header>
+                <SchoolLogo src={education.img} alt={`${education.school} logo`} />
+                <SchoolInfo>
+                    <SchoolName>{education.school}</SchoolName>
                     <Degree>{education.degree}</Degree>
-                    <Date>{education.date}</Date>
-                </Body>
-            </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
-            <Description>
-                <Span>{education.desc}</Span>
-            </Description>
+                </SchoolInfo>
+            </Header>
+            <Date>
+                <FaCalendarAlt />
+                <span>{education.date}</span>
+            </Date>
+            <Grade>
+                <FaStar />
+                <span>Grade: {education.grade}</span>
+            </Grade>
+            <SectionTitle>
+                <FaBook />
+                Activities and Societies
+            </SectionTitle>
+            <Activities>{education.activities}</Activities>
+            <SectionTitle>
+                <FaTools />
+                Coursework
+            </SectionTitle>
+            <CourseworkList>
+                {education.coursework.map((course, index) => (
+                    <CourseworkItem key={index}>
+                        <BulletPoint />
+                        {course}
+                    </CourseworkItem>
+                ))}
+            </CourseworkList>
+            {/* <SectionTitle>
+                <FaGraduationCap />
+                Skills
+            </SectionTitle>
+            <SkillsList>
+                {education.skills.map((skill, index) => (
+                    <SkillBadge key={index}>{skill}</SkillBadge>
+                ))}
+            </SkillsList> */}
         </Card>
     )
 }
