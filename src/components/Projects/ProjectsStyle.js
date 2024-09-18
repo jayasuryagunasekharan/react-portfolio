@@ -129,3 +129,17 @@ export const LoadMoreButton = styled.button`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 `;
+
+export const NotPinnedDivider = styled.hr`
+  width: 100%;
+  border: none;
+  border-top: 1px solid ${({ theme }) => theme.divider_color || '#ccc'};
+  margin: 32px 0;
+`;
+
+export const NotPinnedTitle = styled.h3`
+  font-size: 24px;
+  color: ${({ theme }) => theme.text_primary};
+  margin-bottom: 16px;
+  text-align: center;
+`;

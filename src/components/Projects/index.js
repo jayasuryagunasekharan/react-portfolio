@@ -1,19 +1,32 @@
 import React, { useState } from 'react';
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider, LoadMoreButton } from './ProjectsStyle';
+import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider, LoadMoreButton, NotPinnedDivider, NotPinnedTitle } from './ProjectsStyle';
 import ProjectCard from '../Cards/ProjectCards';
 import { projects } from '../../data/constants';
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState('all');
   const [visibleProjects, setVisibleProjects] = useState(9);
-  
+
   const loadMore = () => {
     setVisibleProjects(prev => prev + 9);
   };
 
-  const filteredProjects = toggle === 'all' 
-    ? projects 
+  const handleToggle = (category) => {
+    setToggle(category);
+    setVisibleProjects(9); // Reset visible projects when category changes
+  };
+
+  // Filter projects based on the selected category
+  const filteredProjects = toggle === 'all'
+    ? projects
     : projects.filter((item) => item.category === toggle);
+
+  // Separate pinned and unpinned projects
+  const pinnedProjects = filteredProjects.filter(project => project.pinned);
+  const unpinnedProjects = filteredProjects.filter(project => !project.pinned);
+
+  // Determine the projects to display based on visibility
+  const visibleUnpinnedProjects = unpinnedProjects.slice(0, visibleProjects);
 
   return (
     <Container id="projects">
@@ -28,7 +41,7 @@ const Projects = ({ openModal, setOpenModal }) => {
               <ToggleButton 
                 active={toggle === category} 
                 value={category} 
-                onClick={() => setToggle(category)}
+                onClick={() => handleToggle(category)}
               >
                 {category.toUpperCase()}
               </ToggleButton>
@@ -37,16 +50,39 @@ const Projects = ({ openModal, setOpenModal }) => {
           ))}
         </ToggleButtonGroup>
         <CardContainer>
-          {filteredProjects.slice(0, visibleProjects).map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
-          ))}
+          {/* Display Pinned Projects */}
+          {pinnedProjects.length > 0 && (
+            <>
+              {pinnedProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                />
+              ))}
+            </>
+          )}
+
+          {/* Display Unpinned Projects */}
+          {visibleUnpinnedProjects.length > 0 && (
+            <>
+              {pinnedProjects.length > 0 && <NotPinnedDivider />}
+              {pinnedProjects.length > 0 && <NotPinnedTitle></NotPinnedTitle>}
+              {visibleUnpinnedProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                />
+              ))}
+            </>
+          )}
         </CardContainer>
-        {visibleProjects < filteredProjects.length && (
+
+        {/* Load More Button */}
+        {visibleProjects < unpinnedProjects.length && (
           <LoadMoreButton onClick={loadMore}>Load More</LoadMoreButton>
         )}
       </Wrapper>

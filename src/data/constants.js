@@ -505,19 +505,20 @@ export const Bio = {
       category: "Software Engineer",
       github: "https://github.com/jayasuryagunasekharan/arlington-sprouts-store", 
       webapp: "https://arlington-sprouts-store.vercel.app/",
+      pinned: true,
     },
     {
       id: 2,
-      title: "Under Represented Minority Application",
-      date: "Jul. 2023 - Aug. 2023",
-      description:
-        "Developed URM web application development, increasing data handling efficiency by 40% using ReactJS and SQL. Orchestrated integration of Laravel/PHP and ReactJS, resulting in 25% enhancement in system responsiveness.",
-        image:"https://blog.ongig.com/wp-content/uploads/2020/09/People-and-diversity-Underrepresented-Groups-1024x576.jpg",
-        tags: ["ReactJS", "SQL", "JavaScript", "Node.js"],
+      title: "Job Portal",
+      date: "Aug. 2024 - Sept. 2024",
+      description: "Developed a full stack job portal designed for 1,000+ user profiles and applications, integrated a secure payment system using Stripe for premium job listings, and enhanced account management with Clerk authentication. Leveraged Next.js for server-side rendering and MongoDB for data storage, while Supabase enabled real-time data interaction, improving user engagement and scalability.",
+      image: "https://themewagon.com/wp-content/uploads/2020/11/jobfinder-1.jpg",
+      tags: ["Next.js", "Stripe", "Clerk", "MongoDB", "Supabase", "Job Portal"],
       category: "Software Engineer",
-      github: "https://job-board-liart-six.vercel.app/", 
-      webapp: "https://jxg0437.uta.cloud/",
-    },
+      github: "https://github.com/jayasuryagunasekharan/job-board",
+      webapp: "https://job-board-liart-six.vercel.app/",
+      pinned: true,
+    },    
     {
       id: 3,
       title: "Image Captioning System",
@@ -526,8 +527,9 @@ export const Bio = {
       image: "https://miro.medium.com/v2/resize:fit:685/1*UDOnzqoTnWUQoPP8pZUXgQ.png",
       tags: ["Python", "TensorFlow", "Keras", "NumPy", "NLTK", "AWS EC2", "AWS Lambda"],
       category: "Machine Learning / AI",
-      github: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",
-      webapp: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing"
+      github: "https://github.com/jayasuryagunasekharan/job-board",
+      webapp: "https://colab.research.google.com/drive/1HPPsBDzkYxOJ67V8E_2Ud7-vvrXEXF4u?usp=sharing",
+      pinned: true,
     },
     {
         id: 4,
@@ -540,6 +542,7 @@ export const Bio = {
         category: "Software Engineer",
         github: "https://github.com/jayasuryagunasekharan/search-engine",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 5,
@@ -550,8 +553,9 @@ export const Bio = {
           image:"https://www.cflowapps.com/wp-content/uploads/2022/12/lon_mangmntprcs.jpg",
           tags: ["Apex", "Java", "SQL", "JavaScript", "HTML", "CSS"],
         category: "Software Engineer",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 6,
@@ -562,8 +566,9 @@ export const Bio = {
           image:"https://i0.wp.com/mustangnews.net/wp-content/uploads/2022/01/Screen-Shot-2022-01-28-at-11.58.30-AM.jpg?ssl=1",
           tags: ["Python", "MongoDB", "Figma"],
         category: "Software Engineer",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "https://www.figma.com/design/HlP9x4yS6Zng66mo3GSDFe/3SA?node-id=1-2&t=va0LRKzYdMPAPGLt-0",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 7,
@@ -574,8 +579,9 @@ export const Bio = {
           image:"https://cdn.who.int/media/images/default-source/mca/mca-covid-19/coronavirus-2.tmb-479v.jpg?sfvrsn=4dba955c_19%20479w",
           tags: ["Python", "Azure", "SQL"],
         category: "Data Science / Data Analysis",
-        github: "",  // Add GitHub link if available
-        webapp: "",  // Add web app link if available
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",  // Add web app link if 
+        pinned: false,
       },
       {
         id: 8,
@@ -586,8 +592,9 @@ export const Bio = {
           image:"https://www.bvna.com/sites/g/files/zypfnx386/files/styles/magazine_cover_mobile/public/2019-09/iStock-1080170590.jpg?h=db11860f&itok=A9Mmo74j",
           tags: ["Azure", "Python", "DevOps", "HTML/CSS", "GitHub"],
         category: "Data Science / Data Analysis",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 9,
@@ -598,8 +605,9 @@ export const Bio = {
           image:"https://media.licdn.com/dms/image/D5612AQFoxSZYLjV_EA/article-cover_image-shrink_720_1280/0/1677588476245?e=2147483647&v=beta&t=5WT3HMuBEmRSB9aJY-gUJkivFbH7DvkIH4LWk9T7u1Y",
           tags: ["Python", "PyTorch"],
         category: "Machine Learning / AI",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 10,
@@ -610,8 +618,9 @@ export const Bio = {
           image:"https://assets.skyfilabs.com/images/blog/image-classifer-for-identifying-cats-dogs.webp",
           tags: ["Python", "TensorFlow", "GPU"],
         category: "Machine Learning / AI",
-        github: "", 
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",
+        pinned: false,
       },
       {
         id: 11,
@@ -622,8 +631,9 @@ export const Bio = {
           image:"https://www.zillowstatic.com/bedrock/app/uploads/sites/33/2024/01/zillow-2024-predictions.jpeg",
           tags: ["Python", "Linear Regression", "Jupyter", "Pandas", "NumPy", "Seaborn", "Tableau"],
         category: "Data Science / Data Analysis",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 12,
@@ -634,8 +644,9 @@ export const Bio = {
           image:"https://www.gutenbergresearch.com/uploads/4/7/9/1/47917039/published/scene-19_2.jpg",
           tags: ["R", "Visualization"],
         category: "Data Science / Data Analysis",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 13,
@@ -646,8 +657,9 @@ export const Bio = {
           image:"https://miro.medium.com/v2/resize:fit:1400/1*nGnrxFYs7CTtUHjILoi41g.png",
           tags: ["Python", "cv2", "RNN"],
         category: "Machine Learning / AI",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 14,
@@ -660,6 +672,7 @@ export const Bio = {
         category: "Machine Learning / AI",
         github: "",  // Add GitHub link if available
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 15,
@@ -670,8 +683,9 @@ export const Bio = {
           image:"https://fastdatascience.com/images/image2-min-1.jpg",
           tags: ["Python", "TensorFlow", "Keras", "GAN"],
         category: "Machine Learning / AI",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 16,
@@ -682,8 +696,9 @@ export const Bio = {
           image:"https://media.geeksforgeeks.org/wp-content/uploads/20240524180818/lenet-min.PNG",
           tags: ["Python", "PyTorch", "Neural Network"],
         category: "Machine Learning / AI",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
         id: 17,
@@ -694,8 +709,9 @@ export const Bio = {
           image:"https://mastercubestore.com/3909-large_default/six-connection-wooden-puzzle-8.jpg",
           tags: ["Python", "Data Structures & Algorithms", "Artificial Intelligence"],
         category: "Software Engineer",
-        github: "",  // Add GitHub link if available
+        github: "https://github.com/jayasuryagunasekharan/",
         webapp: "",  // Add web app link if available
+        pinned: false,
       },
       {
       id: 18,
@@ -706,8 +722,9 @@ export const Bio = {
         image:"https://www.autotrader.com/wp-content/uploads/2022/11/preapproval-e1675767497814.jpg",
         tags: ["Java", "Spring Boot", "RESTful API", "Angular", "AWS"],
       category: "Software Engineer",
-      github: "",  // Add GitHub link if available
+      github: "https://github.com/jayasuryagunasekharan/",
       webapp: "",  // Add web app link if available
+      pinned: false,
     },
     {
         id: 19,
@@ -717,8 +734,9 @@ export const Bio = {
         image:"https://miro.medium.com/max/9000/1*h0mO4PdZaQKtbwWJW40FKQ.jpeg",
         tags: ["Python", "NLP", "TensorFlow", "Seaborn", "Scikit-learn"],
         category: "Machine Learning / AI",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 20,
@@ -728,8 +746,9 @@ export const Bio = {
         image:"https://miro.medium.com/v2/resize:fit:1024/1*uK8DcWLvsm87NWRC1pafew.jpeg",
         tags: ["Python", "Bayesian Inference", "Machine Learning"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 21,
@@ -739,8 +758,9 @@ export const Bio = {
         image:"https://miro.medium.com/v2/resize:fit:1400/1*1vYQfOU-iKGzSldPWjnfRA.jpeg",
         tags: ["Python", "Totally-Ordered Multicast", "Multithreading", "Scalability"],
         category: "Software Engineer",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 22,
@@ -750,8 +770,9 @@ export const Bio = {
         image:"https://ds055uzetaobb.cloudfront.net/brioche/solvable/9fb3175975.621521f9a8.phGpSZ.png?width=250",
         tags: ["Python", "Artificial Intelligence", "Algorithm Design"],
         category: "Software Engineer",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 23,
@@ -761,8 +782,9 @@ export const Bio = {
         image:"https://media.licdn.com/dms/image/C5612AQEEf9kIczF-Iw/article-cover_image-shrink_600_2000/0/1633548191707?e=2147483647&v=beta&t=LHISzgj0BWNm58bGauJ9QK3IrT0ojakxTnBFLpL-dBg",
         tags: ["SQL", "Salesforce", "Real Estate", "Database Management"],
         category: "Software Engineer",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+        pinned: false,
       },
       {
         id: 24,
@@ -772,8 +794,9 @@ export const Bio = {
         image:"https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/03/Rocket-Guardians-Of-The-Galaxy-Vol-2-Official-Poster-Cropped.jpg",
         tags: ["C++", "V-Rep Simulation", "Path Planning", "Image Processing", "Mobile Robotics"],
         category: "Embedded",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       }, 
       {
         id: 25,
@@ -783,8 +806,9 @@ export const Bio = {
         image:"https://di-uploads-pod10.dealerinspire.com/viphonda/uploads/2018/03/Honda-Sensing-.jpg",
         tags: ["Python", "Linux", "Wi-Fi", "Collision Warning System", "Embedded Systems"],
         category: "Embedded",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 26,
@@ -794,8 +818,9 @@ export const Bio = {
         image:"https://www.jbcp.jo/sites/default/files/2019-06/Breast%20Cancer%20Diagnosis.jpg",
         tags: ["Python", "Machine Learning", "Medical Diagnosis", "Pandas"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 27,
@@ -805,8 +830,9 @@ export const Bio = {
         image:"https://s3.envato.com/files/251622122/Audio%20Spectrum%20Music%20Visualizer.jpg",
         tags: ["C", "Audio Processing", "Wireless Communication", "Signal Processing"],
         category: "Embedded",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 28,
@@ -816,8 +842,9 @@ export const Bio = {
         image:"https://i.ytimg.com/vi/UO_RvM9QvYQ/maxresdefault.jpg",
         tags: ["AWS EC2", "AWS Lambda", "Amazon SageMaker", "Image Processing", "Cloud Computing"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 29,
@@ -827,8 +854,9 @@ export const Bio = {
         image:"https://miro.medium.com/v2/resize:fit:2000/1*hhq3ybwbyA3p0dWuLFtLMQ.jpeg",
         tags: ["Python", "Machine Learning", "Stock Market Analysis", "Support Vector Regression"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 30,
@@ -838,8 +866,9 @@ export const Bio = {
         image:"https://repository-images.githubusercontent.com/446393339/d4481b17-7960-4f3c-b040-8507df57f81b",
         tags: ["Python", "NLP", "TensorFlow", "Sentiment Analysis"],
         category: "Machine Learning / AI",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 31,
@@ -849,8 +878,9 @@ export const Bio = {
         image:"https://cdn-images-1.medium.com/max/1500/1*leuI7fVkeOrKAIGOOj_T9A.png",
         tags: ["Python", "Pandas", "NumPy", "Recommendation Systems"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
       {
         id: 32,
@@ -860,8 +890,9 @@ export const Bio = {
         image:"https://blog.lancedb.com/content/images/2024/05/1_AatBvnpVpEPoQvZAMeqU-A.webp",
         tags: ["Python", "Machine Learning", "NBA", "Classification"],
         category: "Data Science / Data Analysis",
-        github: "",
-        webapp: ""
+        github: "https://github.com/jayasuryagunasekharan/",
+        webapp: "",
+        pinned: false,
       },
         {
           id: 33,
@@ -871,8 +902,9 @@ export const Bio = {
           image:"https://climate.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbW9tIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0dbb5099d29d8f0e7f83dd3860eb4a7232d8d80d/rapidscatmain_768.jpg",
         tags: ["Python", "Pandas", "Scikit-Learn", "Weather Prediction", "Linear Regression"],
           category: "Data Science / Data Analysis",
-          github: "",
-          webapp: ""
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
           id: 34,
@@ -882,20 +914,22 @@ export const Bio = {
           image:"https://bookdown.org/tpinto_home/Unsupervised-learning/kmeans.png",
         tags: ["Python", "NumPy", "Matplotlib", "Clustering", "Unsupervised Learning"],
           category: "Machine Learning / AI",
-          github: "",
-          webapp: ""
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
           id: 35,
-          title: "Health Monitoring App",
-          date: "Sep. 2023 - Oct. 2023",
-          description: "Enhanced patient monitoring accuracy by building a cross-platform mobile application for health monitoring, leveraging React Native to integrate real-time health data tracking, notifications, and analytics, improving patient outcomes.",
-          image:"https://techexactly.com/wp-content/uploads/2021/02/rpm-banner.jpg",
-        tags: ["React Native", "Mobile App Development", "Healthcare", "Real-time Data Tracking"],
-          category: "Software Engineer",
-          github: "",
-          webapp: ""
-        },
+          title: "Patient Management System",
+          date: "Aug. 2024 - Sept. 2024",
+          description: "Developed a patient management system using Next.js for front-end development and integrated Twilio for SMS notifications. Implemented appointment scheduling, patient registration, and admin dashboard with real-time verification, utilizing Appwrite for backend management and Sentry for application security.",
+          image: "https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2022/11/28162754/Best-FreeOpen-Source-Hospital-Management-System-01.png",
+          tags: ["Next.js", "Twilio", "Appwrite", "Sentry", "Healthcare", "Patient Management"],
+          category: "Data Science / Data Analysis",
+          github: "https://github.com/jayasuryagunasekharan/healthcare",
+          webapp: "https://healthcare-y5sj-mz6i5ofh7-jayasurya-guansekharans-projects.vercel.app/",
+          pinned: true,
+        },        
         {
           id: 36,
           title: "Conversational Bot",
@@ -904,97 +938,129 @@ export const Bio = {
           image:"https://www.tidio.com/wp-content/uploads/chatbots-vs-conversational-AI-cover-image.png",
           tags: ["React", "Expo", "Google API", "Conversational AI", "NLP"],
           category: "Software Engineer",
-          github: "",
-          webapp: ""
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 37,
-          "title": "Employee Management System",
-          "date": "May 2024 - Aug. 2024",
-          "description": "Migrated 1 back-end service to manage end-to-end employee system using Spring Boot and MySQL to ensure efficient data management and conducted tests with JUnit and Mockito.",
-          "image": "data:image/png;base64,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",
-          "tags": ["Java", "Spring Boot", "JUnit", "Mockito", "TDD"],
-          "category": "Software Engineer",
-          "github": "",
-          "webapp": ""
+          id: 37,
+          title: "Employee Management System",
+          date: "May 2024 - Aug. 2024",
+          description: "Migrated 1 back-end service to manage end-to-end employee system using Spring Boot and MySQL to ensure efficient data management and conducted tests with JUnit and Mockito.",
+          image: "data:image/png;base64,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",
+          tags: ["Java", "Spring Boot", "JUnit", "Mockito", "TDD"],
+          category: "Software Engineer",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
+        },        {
+          id: 38,
+          title: "File Sharing System",
+          date: "May 2024 - Aug. 2024",
+          description: "Ideated designing front end React components for UI filters resulting in optimized user experience by 15%. Constructed a back-end web RESTful API system utilizing Node.js to parse Json, PDF Invoices and uploads the resulting file in AWS S3 to process their metadata by AWS Lambda trigger and store it in the DynamoDB for other microservices to consume. Leveraged AWS DynamoDB streams to trigger AWS EC2 instances automatically and orchestrated AWS IAM roles for secure permissions and monitored using AWS CloudWatch for logging and performance metrics.",
+          image: "https://miro.medium.com/v2/resize:fit:1400/1*EcPtZACCMh0Mn6AZe5dgKQ.png",
+          tags: ["React.js", "Node.js", "NoSQL", "AWS S3", "Lambda", "DynamoDB", "EC2", "IAM", "CloudWatch"],
+          category: "Data Science / Data Analysis",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
+        },        {
+          id: 39,
+          title: "Engine Temperature Streaming System",
+          date: "May 2024 - Aug. 2024",
+          description: "Built a back-end web RESTful API system utilizing Flask, Cassandra for database, and Docker to stream engine data from embedded sensors, transforming data, optimizing data flow process using Apache Airflow, Kafka and reducing latency by 25%. Streamlined the transfer of Kafka topic message data and events between producers and consumers using Schema Registry.",
+          image: "https://www.kai-waehner.de/wp-content/uploads/2021/07/Apache-Kafka-in-the-Automotive-Industry-including-Car-Makers-Tier-1-Suppliers-Manufacturing-Connected-Cars-Mobility-Services-Smart-City-1280x720.png",
+          tags: ["Docker", "Flask", "Redis", "Python", "GitHub", "Kafka", "Cassandra"],
+          category: "Software Engineer",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 38,
-          "title": "File Sharing System",
-          "date": "May 2024 - Aug. 2024",
-          "description": "Ideated designing front end React components for UI filters resulting in optimized user experience by 15%. Constructed a back-end web RESTful API system utilizing Node.js to parse Json, PDF Invoices and uploads the resulting file in AWS S3 to process their metadata by AWS Lambda trigger and store it in the DynamoDB for other microservices to consume. Leveraged AWS DynamoDB streams to trigger AWS EC2 instances automatically and orchestrated AWS IAM roles for secure permissions and monitored using AWS CloudWatch for logging and performance metrics.",
-          "image": "https://miro.medium.com/v2/resize:fit:1400/1*EcPtZACCMh0Mn6AZe5dgKQ.png",
-          "tags": ["React.js", "Node.js", "NoSQL", "AWS S3", "Lambda", "DynamoDB", "EC2", "IAM", "CloudWatch"],
-          "category": "Data Science / Data Analysis",
-          "github": "",
-          "webapp": ""
+          id: 40,
+          title: "Under Represented Minority Application",
+          date: "Jul. 2023 - Aug. 2023",
+          description:
+            "Developed URM web application development, increasing data handling efficiency by 40% using ReactJS and SQL. Orchestrated integration of Laravel/PHP and ReactJS, resulting in 25% enhancement in system responsiveness.",
+            image:"https://blog.ongig.com/wp-content/uploads/2020/09/People-and-diversity-Underrepresented-Groups-1024x576.jpg",
+            tags: ["ReactJS", "SQL", "JavaScript", "Node.js"],
+          category: "Software Engineer",
+          github: "https://github.com/jayasuryagunasekharan/urm_application",
+          webapp: "https://jxg0437.uta.cloud/", 
+          pinned: true,
         },
         {
-          "id": 39,
-          "title": "Engine Temperature Streaming System",
-          "date": "May 2024 - Aug. 2024",
-          "description": "Built a back-end web RESTful API system utilizing Flask, Cassandra for database, and Docker to stream engine data from embedded sensors, transforming data, optimizing data flow process using Apache Airflow, Kafka and reducing latency by 25%. Streamlined the transfer of Kafka topic message data and events between producers and consumers using Schema Registry.",
-          "image": "https://www.kai-waehner.de/wp-content/uploads/2021/07/Apache-Kafka-in-the-Automotive-Industry-including-Car-Makers-Tier-1-Suppliers-Manufacturing-Connected-Cars-Mobility-Services-Smart-City-1280x720.png",
-          "tags": ["Docker", "Flask", "Redis", "Python", "GitHub", "Kafka", "Cassandra"],
-          "category": "Software Engineer",
-          "github": "",
-          "webapp": ""
+          id: 41,
+          title: "Uber Data Analytics",
+          date: "Jun. 2023 - Sep. 2023",
+          description: "Utilized GCP Storage for data ingestion, Python, Pandas for data cleaning and transformation, and Mage.ai for constructing a robust data pipeline that processes which handles large datasets, ensuring data quality and integrity. Leveraged Google BigQuery for scalable data warehousing and complex query execution. Visualized insights using Looker Studio to generate interactive dashboards that facilitate data-driven decision-making, providing clear insights into Uber trip patterns and metrics.",
+          image: "https://daxg39y63pxwu.cloudfront.net/images/blog/uber-data-analysis-project-using-machine-learning-in-python/uber_data_analysis_project.webp",
+          tags: ["GCP Storage", "Python", "Pandas", "Compute Engine", "Mage", "BigQuery", "Looker"],
+          category: "Data Science / Data Analysis",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 42,
-          "title": "Uber Data Analytics",
-          "date": "Jun. 2023 - Sep. 2023",
-          "description": "Utilized GCP Storage for data ingestion, Python, Pandas for data cleaning and transformation, and Mage.ai for constructing a robust data pipeline that processes which handles large datasets, ensuring data quality and integrity. Leveraged Google BigQuery for scalable data warehousing and complex query execution. Visualized insights using Looker Studio to generate interactive dashboards that facilitate data-driven decision-making, providing clear insights into Uber trip patterns and metrics.",
-          "image": "https://daxg39y63pxwu.cloudfront.net/images/blog/uber-data-analysis-project-using-machine-learning-in-python/uber_data_analysis_project.webp",
-          "tags": ["GCP Storage", "Python", "Pandas", "Compute Engine", "Mage", "BigQuery", "Looker"],
-          "category": "Data Science / Data Analysis",
-          "github": "",
-          "webapp": ""
+          id: 42,
+          title: "Sales Analysis",
+          date: "Mar. 2023 - May 2023",
+          description: "Developed an interactive data visualization web application using Python, Dash and Pandas, a user-friendly interface with charts that display sales trends over time, allowing filtering by customizations ensuring a reliable and engaging user experience for stakeholders analyzing sales performance. Enhanced the app’s visual appeal with custom CSS and ensured it was tested thoroughly using the Dash testing framework, automating the integrations using bash scripts.",
+          image: "https://www.marketing91.com/wp-content/uploads/2018/10/Sales-Analysis-3.jpg",
+          tags: ["Python", "Excel", "Pandas", "CSS", "PyTest", "Bash Scripting"],
+          category: "Data Science / Data Analysis",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 43,
-          "title": "Sales Analysis",
-          "date": "Mar. 2023 - May 2023",
-          "description": "Developed an interactive data visualization web application using Python, Dash and Pandas, a user-friendly interface with charts that display sales trends over time, allowing filtering by customizations ensuring a reliable and engaging user experience for stakeholders analyzing sales performance. Enhanced the app’s visual appeal with custom CSS and ensured it was tested thoroughly using the Dash testing framework, automating the integrations using bash scripts.",
-          "image": "https://www.marketing91.com/wp-content/uploads/2018/10/Sales-Analysis-3.jpg",
-          "tags": ["Python", "Excel", "Pandas", "CSS", "PyTest", "Bash Scripting"],
-          "category": "Data Science / Data Analysis",
-          "github": "",
-          "webapp": ""
+          id: 43,
+          title: "Stock Price Manipulation",
+          date: "Jan. 2023 - Feb. 2023",
+          description: "Designed real-time stock price data interface with Python, React.js, enhancing trader decision-making capabilities. Contributed to open-source projects related to data visualization and API development on GitHub, leveraging Python, TypeScript, Git and Linux.",
+          image: "https://kkc.com/wp-content/uploads/2022/12/Market-Manipulation.jpg",
+          tags: ["React.js", "Python", "API Development", "TypeScript", "Node.js", "GitHub"],
+          category: "Data Science / Data Analysis",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 44,
-          "title": "Stock Price Manipulation",
-          "date": "Jan. 2023 - Feb. 2023",
-          "description": "Designed real-time stock price data interface with Python, React.js, enhancing trader decision-making capabilities. Contributed to open-source projects related to data visualization and API development on GitHub, leveraging Python, TypeScript, Git and Linux.",
-          "image": "https://kkc.com/wp-content/uploads/2022/12/Market-Manipulation.jpg",
-          "tags": ["React.js", "Python", "API Development", "TypeScript", "Node.js", "GitHub"],
-          "category": "Data Science / Data Analysis",
-          "github": "",
-          "webapp": ""
+          id: 44,
+          title: "URL Shortener",
+          date: "Jul. 2023 - Aug. 2023",
+          description: "Built a full-stack URL shortener application with a Vue.js frontend and Node.js backend, storing data in MongoDB. Developed an Express server to handle URL creation, validation, and redirection, using Validate.js and Shortid libraries. Created a responsive Vue.js interface with Bootstrap, including a form for URL input and API integration using Axios. Tested and deployed the application, ensuring seamless functionality and integration across all components.",
+          image: "https://www.printrunner.com/blog/wp-content/uploads/2016/09/10_UsingURLShorteners-777x437.jpg",
+          tags: ["Vue.js", "Node.js", "MongoDB"],
+          category: "Software Engineer",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 47,
-          "title": "URL Shortener",
-          "date": "Jul. 2023 - Aug. 2023",
-          "description": "Built a full-stack URL shortener application with a Vue.js frontend and Node.js backend, storing data in MongoDB. Developed an Express server to handle URL creation, validation, and redirection, using Validate.js and Shortid libraries. Created a responsive Vue.js interface with Bootstrap, including a form for URL input and API integration using Axios. Tested and deployed the application, ensuring seamless functionality and integration across all components.",
-          "image": "https://www.printrunner.com/blog/wp-content/uploads/2016/09/10_UsingURLShorteners-777x437.jpg",
-          "tags": ["Vue.js", "Node.js", "MongoDB"],
-          "category": "Software Engineer",
-          "github": "",
-          "webapp": ""
+          id: 45,
+          title: "Flight Planning Application",
+          date: "Oct. 2023 - Nov. 2023",
+          description: "Built and supported .NET/ASP.NET website and services, optimizing system performance and enhancing user experience, resulting in a 30% increase in website responsiveness, as assessed through user feedback.",
+          image: "https://photos5.appleinsider.com/gallery/53169-106546-Template-3-xl.jpg",
+          tags: [".NET", "ASP.NET"],
+          category: "Software Engineer",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false,
         },
         {
-          "id": 48,
-          "title": "Flight Planning Application",
-          "date": "Oct. 2023 - Nov. 2023",
-          "description": "Built and supported .NET/ASP.NET website and services, optimizing system performance and enhancing user experience, resulting in a 30% increase in website responsiveness, as assessed through user feedback.",
-          "image": "https://photos5.appleinsider.com/gallery/53169-106546-Template-3-xl.jpg",
-          "tags": [".NET", "ASP.NET"],
-          "category": "Software Engineer",
-          "github": "",
-          "webapp": ""
-        },  
+          id: 46,
+          title: "Gemini ChatBot",
+          date: "Aug. 2024 - Aug. 2024",
+          description: "Developed a sci-fi themed chatbot interface using Flask and Google's Gemini AI. The project features a responsive web design with a space-inspired background, real-time chat functionality, and integration with Gemini's advanced language model for intelligent responses.",
+          image: "https://www.livemint.com/lm-img/img/2024/02/16/600x338/GEMINI-AI-14_1702176610121_1708061846561.jpg",
+          tags: ["Python", "Flask", "HTML/CSS", "JavaScript", "Gemini AI", "Vercel"],
+          category: "Machine Learning / AI",
+          github: "https://github.com/jayasuryagunasekharan/chat-bot",
+          webapp: "https://chat-bot-two-xi.vercel.app/",
+          pinned: true,
+        },
   ];
     
   export const TimeLineData = [

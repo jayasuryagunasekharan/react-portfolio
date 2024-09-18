@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { FaThumbtack } from 'react-icons/fa'; // Change this line
 
 const Button = styled.button`
     display: none;
@@ -36,6 +36,7 @@ const Card = styled.div`
     &:hover ${Button} {
         display: block;
     }
+    position: relative;
 `
 
 const Image = styled.img`
@@ -122,6 +123,15 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
+// Pin Icon
+const PinIcon = styled(FaThumbtack)`  // Change this line
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: ${({ theme }) => theme.primary};
+  font-size: 20px;
+`;
+
 const ProjectDescription = ({ description }) => {
     const descriptionList = description ? description.split('.').filter(sentence => sentence.trim().length > 0) : [];
     return (
@@ -138,10 +148,11 @@ const ProjectDescription = ({ description }) => {
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
+            {project.pinned && <PinIcon title="Pinned Project" />}
             <Image src={project.image}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -150,8 +161,8 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <ProjectDescription description={project?.description} />
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img}/>
                 ))}
             </Members>
             {/* <Button>View Project</Button> */}
