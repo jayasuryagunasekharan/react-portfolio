@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const fadeInOut = keyframes`
   0% {
@@ -93,7 +94,7 @@ export const HeroLeftContainer = styled.div`
   order: 1;
   @media (max-width: 960px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +102,7 @@ export const HeroLeftContainer = styled.div`
 
   @media (max-width: 640px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom:10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,16 +112,15 @@ export const HeroLeftContainer = styled.div`
 export const HeroRightContainer = styled.div`
   width: 100%;
   display: flex;
-  order: 2;
-  justify-content: end;
-  gap: 12px;
-  position: relative; /* Ensure this is relative for z-index to work */
-  z-index: 2; /* Higher than HeroBg to be in front of stars */
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; // This creates space between the button and the image
+  order: 1;
   @media (max-width: 960px) {
-    order: 1;
-    justify-content: center;
+    order: 2;
+    margin-bottom: 30px;
     align-items: center;
-    margin-bottom: 80px;
+    justify-content: center;
   }
 
   @media (max-width: 640px) {
@@ -131,19 +131,54 @@ export const HeroRightContainer = styled.div`
 export const Img = styled.img`
   position: relative;
   width: 100%;
+  height: 100%;
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   @media (max-width: 640px) {
     max-width: 280px;
     max-height: 280px;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+`;
+
+export const CertificationButton = styled(Link)`
+  text-decoration: none;
+  max-width: 300px;
+  text-align: center;
+  padding: 10px 10px;
+  color: ${({ theme }) => theme.white || '#ffffff'};
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out !important;
+  background: ${({ theme }) => theme.primary || '#854CE6'};
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 960px) {
+    font-size: 18px;
+    padding: 12px 0;
+    width: 220px;
   }
 `;
 
@@ -209,7 +244,7 @@ export const ResumeButton = styled.a`
     width: 95%;
     max-width: 300px;
     text-align: center;
-    padding: 16px 0;
+    padding: 10px 0;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;
@@ -236,9 +271,12 @@ export const ResumeButton = styled.a`
     } 
 `;
 
-
 export const HobbiesSection = styled.div`
-  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
 `;
 
 export const HobbiesTitle = styled.h4`
@@ -251,23 +289,35 @@ export const HobbiesTitle = styled.h4`
 `;
 
 export const HobbiesList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 600px; // Adjust this value to control the overall width of the hobbies section
 `;
 
 export const HobbyItem = styled.li`
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
+  gap: 10px;
   font-size: 16px;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
+  background-color: ${({ theme }) => theme.card};
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
 `;
 
-export const HobbyIcon = styled.span`
-  color: ${({ theme }) => theme.primary};
+export const HobbyIcon = styled.div`
   font-size: 20px;
-  display: flex;
-  align-items: center;
+  color: ${({ theme }) => theme.primary};
 `;

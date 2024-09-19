@@ -3,6 +3,7 @@ import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
 import HeroImage from '../../images/HeroImage.jpg';
 
+
 // Import styled components from HeroStyle.js
 import {
   HeroContainer,
@@ -21,6 +22,8 @@ import {
   HobbiesList,
   HobbyItem,
   HobbyIcon,
+  CertificationButton,
+  ButtonWrapper,
 } from './HeroStyle';
 
 // Import icons from react-icons
@@ -50,10 +53,19 @@ const HeroSection = () => {
             </Span>
           </TextLoop>
           <SubTitle>{Bio.description}</SubTitle>
-          {/* <ResumeButton href={Bio.resume} target="_blank">
-            Check Resume
-          </ResumeButton> */}
           
+          <ButtonWrapper>
+            <CertificationButton to="https://www.linkedin.com/in/jayasuryaguna/details/certifications/" target="new">
+              View Certificates
+            </CertificationButton>
+          </ButtonWrapper>
+          
+        </HeroLeftContainer>
+
+        <HeroRightContainer id="Right">
+                   
+          <Img src={HeroImage} alt="hero-image" />
+
           {/* Hobbies Section */}
           <HobbiesSection>
             <HobbiesTitle>Hobbies</HobbiesTitle>
@@ -71,10 +83,7 @@ const HeroSection = () => {
               ))}
             </HobbiesList>
           </HobbiesSection>
-        </HeroLeftContainer>
 
-        <HeroRightContainer id="Right">
-          <Img src={HeroImage} alt="hero-image" />
         </HeroRightContainer>
       </HeroInnerContainer>
     </HeroContainer>

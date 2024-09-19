@@ -16,10 +16,10 @@ export const Bio = {
   insta: "https://www.instagram.com/surya_luffy/",
   facebook: "https://www.facebook.com/jayasurya.guna",
   hobbies: [
-    "Playing soccer",
+    "Soccer",
     "Anime and F1(Ferrari)",
-    "Playing videogames",
-    "Love Traveling (ping me if you are good at planning trips :P)"
+    "Video Games",
+    "Traveling (ping me if you are good at planning trips :P)"
   ],
 };
   
