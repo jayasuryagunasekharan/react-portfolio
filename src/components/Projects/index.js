@@ -33,10 +33,10 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          Here are some of my projects spanning across domains such as Software Engineering, Data Science, Data Mining, and Machine Learning.
+          Here are some of my projects spanning across domains such as Software Engineering, Embedded Systems, Data Science, Data Engineering and Machine Learning.
         </Desc>
         <ToggleButtonGroup>
-          {['all', 'Software Engineer', 'Embedded', 'Data Science / Data Analysis', 'Machine Learning / AI'].map((category) => (
+          {['all', 'SWE', 'Embedded', 'DS', 'DA', 'ML', 'LLM'].map((category) => (
             <React.Fragment key={category}>
               <ToggleButton 
                 active={toggle === category} 
@@ -45,7 +45,7 @@ const Projects = ({ openModal, setOpenModal }) => {
               >
                 {category.toUpperCase()}
               </ToggleButton>
-              {category !== 'Machine Learning / AI' && <Divider />}
+              {category !== 'LLM' && <Divider />}
             </React.Fragment>
           ))}
         </ToggleButtonGroup>
