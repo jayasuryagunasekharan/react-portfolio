@@ -601,7 +601,7 @@ export const Bio = {
         title: "GPT Transformer",
         date: "Sep. 2024",
         description: "Built a GPT-based transformer model using PyTorch, following 'Attention is All You Need' and GPT-3 architectures, implementing self-attention, multi-headed attention, and transformers to understand language generation tasks.",
-        image: "https://i.ytimg.com/vi/od6AaKhKYmg/hqdefault.jpg?v=667bb124",
+        image: "https://media.licdn.com/dms/image/D5612AQFoxSZYLjV_EA/article-cover_image-shrink_720_1280/0/1677588476245?e=2147483647&v=beta&t=5WT3HMuBEmRSB9aJY-gUJkivFbH7DvkIH4LWk9T7u1Y",
         tags: ["PyTorch", "Transformers", "GPT", "Self-Attention"],
         category: "ML",
         github: "https://github.com/jayasuryagunasekharan/",
