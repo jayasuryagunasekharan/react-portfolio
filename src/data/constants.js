@@ -1145,7 +1145,18 @@ export const Bio = {
           webapp: "",
           pinned: false
         },
-        
+        {
+          id: 54,
+          title: "Recipe Generator and Shopping List App",
+          date: "Aug. 2024 - Aug. 2024",
+          description: "Engineered a user-friendly front-end using ReactJS to enhance recipe generation, and developed a robust Flask back end to integrate with Azure OpenAI, reducing response time by 30%.",
+          image: "https://img.freepik.com/free-photo/flat-lay-arrangement-food-with-digital-tablet_23-2148885204.jpg",
+          tags: ["GenAI", "Langchain", "Azure", "ReactJS", "Flask", "Python"],
+          category: "LLM",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "",
+          pinned: false
+        }        
   ];
     
   export const TimeLineData = [
