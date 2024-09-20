@@ -20,6 +20,7 @@ import { useTheme } from 'styled-components';
 const IconContainer = styled.div`
   display: flex;
   gap: 16px;
+  margin-left:30px;
 
   @media (max-width: 960px) {
     display: none; /* Hide on mobile */
@@ -75,6 +76,8 @@ const Navbar = () => {
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
+          <NavLink href="https://fascinating-jayasuryaguna.wordpress.com/" target="_blank">Blog</NavLink>
         </NavItems>
 
         {/* Desktop Social Icons */}
