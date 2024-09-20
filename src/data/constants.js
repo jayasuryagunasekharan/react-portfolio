@@ -1155,7 +1155,20 @@ export const Bio = {
           github: "https://github.com/jayasuryagunasekharan/",
           webapp: "",
           pinned: false
-        }        
+        },
+        {
+          id: 55,
+          title: "RAG implementation with LLama",
+          date: "Sept. 2024 - Sept. 2024",
+          description: "Implemented a Retrieval-Augmented Generation (RAG) system using HuggingFace, LangChain, and Pinecone to analyze over 2,600 company documents, including invoices, purchase orders, and shipping orders. Utilized LLaMA 3.1 model via Groq API to provide insights on text extraction and classification tasks.",
+          image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_VJskwX7fm6utvq4umYxjBp_W9As96S5dh8OE0XU3uRLzZU5eu4NCipxkSoRebsYGFw0f2w-rjK4D1DPkMR1F0g9czF2NIwZWlnm4YJSEBEGpsR0boTlKnVYF-ajScO_Xg5HhLJdy7vdGDlvKc6kUke248xNY-5gEF1RORdqrfJ55zIjUR7fvBCLPOsLF/s1640/10.png",
+          tags: ["HuggingFace", "Groq", "LangChain", "Pinecone", "LLama 3.1", "RAG"],
+          category: "LLM",
+          github: "https://github.com/jayasuryagunasekharan/",
+          webapp: "https://colab.research.google.com/drive/18LwFVWSpqcVD_4VqmvXQAs027cea0aFY?usp=sharing",
+          pinned: true
+        }
+     
   ];
     
   export const TimeLineData = [
