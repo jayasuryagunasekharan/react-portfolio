@@ -1074,16 +1074,16 @@ export const Bio = {
         },
         {
           id: 48,
-          title: "Chatbot with Graph Database",
-          date: "May 2024 - Jun. 2024",
-          description: "Integrated Neo4j with Gemini Pro LLM to enhance query performance by 30%, enabling faster retrieval of graph database insights and streamlined UI with Streamlit.",
+          title: "Movie Graph Search Tool",
+          date: "Sept. 2024 - Sept. 2024",
+          description: "Developed an interactive Streamlit app for querying a movie database in natural language, leveraging Neo4j graph database and Gemini Pro language model to provide movie insights.",
           image: "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1701261059/catalog/1729839762811453440/t1yyhhniaskijhr7kqky.jpg",
           tags: ["Python", "Neo4j", "Gemini Pro LLM", "Streamlit"],
           category: "LLM",
-          github: "https://github.com/jayasuryagunasekharan/",
-          webapp: "",
-          pinned: false
-        },
+          github: "https://github.com/jayasuryagunasekharan/movies-graph-search-tool",
+          webapp: "https://movies-graph-search-tool-5pgyzv7ezyh2em53cjxspr.streamlit.app/",
+          pinned: true
+        },        
         {
           id: 49,
           title: "Machine Translation System",
