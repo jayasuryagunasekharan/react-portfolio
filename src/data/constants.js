@@ -1167,7 +1167,20 @@ export const Bio = {
           github: "https://github.com/jayasuryagunasekharan/",
           webapp: "https://colab.research.google.com/drive/18LwFVWSpqcVD_4VqmvXQAs027cea0aFY?usp=sharing",
           pinned: true
-        }
+        },
+        {
+          id: 56,
+          title: "Social Media App",
+          date: "July 2024 - Aug. 2024",
+          description: "Developed a highly responsive social media platform using MongoDB, Express, React, Node.js, and GraphQL (MERN+GraphQL). Optimized the platform for over 2,500 active users, boosting user engagement by 35%, media uploads by 20%, and reducing data retrieval time by 25%.",
+          image: "https://cdn-images-1.medium.com/max/853/1*05xJ_KUbt6aPdDqI33UnCQ.jpeg",
+          tags: ["MongoDB", "Express", "React", "Node.js", "GraphQL", "Full Stack"],
+          category: "SWE",
+          github: "https://github.com/jayasuryagunasekharan/social-media-app",
+          webapp: "https://comfy-nougat-963ab2.netlify.app/",
+          pinned: true
+        },
+        
      
   ];
     
