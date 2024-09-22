@@ -36,7 +36,7 @@ const Projects = ({ openModal, setOpenModal }) => {
           Here are some of my projects spanning across domains such as Software Engineering, Embedded Systems, Data Science, Data Engineering and Machine Learning.
         </Desc>
         <ToggleButtonGroup>
-          {['all', 'SWE', 'Embedded', 'DS', 'DA', 'ML', 'LLM'].map((category) => (
+          {['all', 'SWE', 'LLM', 'Embedded', 'DS', 'DA', 'ML'].map((category) => (
             <React.Fragment key={category}>
               <ToggleButton 
                 active={toggle === category} 
