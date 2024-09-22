@@ -1068,7 +1068,7 @@ export const Bio = {
           tags: ["Python", "React", "FastAPI", "Docker", "MongoDB", "Google's Gemini-pro LLM API"],
           category: "LLM",
           github: "https://github.com/jayasuryagunasekharan/conversational-analytics",
-          webapp: "",
+          webapp: "https://conversational-analytics-7n87r96au.vercel.app/",
           pinned: true
         },
         {
