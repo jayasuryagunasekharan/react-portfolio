@@ -1180,6 +1180,18 @@ export const Bio = {
           webapp: "https://arlington-sprouts-store.vercel.app/",
           pinned: true,
         },
+        {
+          id: 57,
+          title: "Fraud Detection Using Autoencoder Neural Network",
+          date: "Sep. 2024",
+          description: "Developed an Autoencoder Neural Network using TensorFlow and Keras to perform anomaly detection on credit card transactions. Achieved 97% ROC AUC score, with an F1-Score of 82%, Precision of 80%, and Recall of 85%. Applied PCA for feature extraction, reducing dimensions while retaining 95% explained variance. Utilized SMOTE to improve the detection of fraudulent transactions.",
+          image: "https://images.spiceworks.com/wp-content/uploads/2021/06/16094651/Fraud-Detection.png",
+          tags: ["Autoencoder", "TensorFlow", "Keras", "PCA", "SMOTE", "Anomaly Detection"],
+          category: "DS",
+          github: "https://github.com/jayasuryagunasekharan/credit-fraud-analysis",
+          webapp: "https://drive.google.com/file/d/1-IYSAfMGsl-y7N6cvPEQ_9pFICiMnSVX/view?usp=sharing",
+          pinned: true
+        },  
   ];
     
   export const TimeLineData = [
