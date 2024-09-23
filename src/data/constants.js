@@ -604,8 +604,8 @@ export const Bio = {
         tags: ["PyTorch", "Transformers", "GPT", "Self-Attention"],
         category: "ML",
         github: "https://github.com/jayasuryagunasekharan/",
-        webapp: "",  // Add web app link if available
-        pinned: false
+        webapp: "https://colab.research.google.com/drive/1T5Mo6U2No429pesi85Ue-ADwLaZu_xt0?usp=sharing",
+        pinned: true
       },
       {
         id: 10,
