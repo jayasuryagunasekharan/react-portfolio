@@ -540,8 +540,8 @@ export const Bio = {
         tags: ["Python", "Docker"],
         category: "ML",
         github: "https://github.com/jayasuryagunasekharan/search-engine",
-        webapp: "",  // Add web app link if available
-        pinned: false,
+        webapp: "https://github.com/jayasuryagunasekharan/search-engine",
+        pinned: true,
       },
       {
         id: 5,
@@ -566,7 +566,7 @@ export const Bio = {
           tags: ["Python", "MongoDB", "Figma"],
         category: "SWE",
         github: "https://github.com/jayasuryagunasekharan/",
-        webapp: "https://www.figma.com/design/HlP9x4yS6Zng66mo3GSDFe/3SA?node-id=1-2&t=va0LRKzYdMPAPGLt-0",  // Add web app link if available
+        webapp: "https://www.figma.com/design/HlP9x4yS6Zng66mo3GSDFe/3SA?node-id=1-2&t=va0LRKzYdMPAPGLt-0", 
         pinned: false,
       },
       {
