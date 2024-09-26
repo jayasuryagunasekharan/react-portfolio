@@ -1,4 +1,6 @@
 // src/data/constants.js
+import SocialMediaAppArch from '../../src/architecture/social-media-app-arch.svg';
+
 export const Bio = {
   name: "Jayasurya Gunasekharan",
   roles: [
@@ -498,8 +500,8 @@ export const Bio = {
       id: 1,
       title: "Social Media App",
       date: "July 2024 - Aug. 2024",
-      description: "Developed a highly responsive social media platform using MongoDB, Express, React, Node.js, and GraphQL (MERN+GraphQL). Optimized the platform for over 2,500 active users, boosting user engagement by 35%, media uploads by 20%, and reducing data retrieval time by 25%.",
-      image: "https://cdn-images-1.medium.com/max/853/1*05xJ_KUbt6aPdDqI33UnCQ.jpeg",
+      description: "Developed a highly responsive social media platform using MongoDB, Express, React, Node.js, and GraphQL (MERN+GraphQL). Optimized the platform for over 250 active users, boosting user engagement by 35%, media uploads by 20%, and reducing data retrieval time by 25%.",
+      image: SocialMediaAppArch,
       tags: ["MongoDB", "Express", "React", "Node.js", "GraphQL", "Full Stack"],
       category: "SWE",
       github: "https://github.com/jayasuryagunasekharan/social-media-app",
