@@ -305,9 +305,9 @@ export const Bio = {
     {
       id: 0,
       img: "https://kalachandjis.com/wp-content/themes/yootheme/cache/2e/kalachandjis-logo-2ea8dd70.webp",
-      role: "Analyst",
+      role: "Sofwtare Enginer / Analyst",
       company: "Kalachandji's",
-      date: "Aug 2022 - May 2024",
+      date: "July 2024 - Present",
       desc: [
         "Achieved $300/week reduction in inventory costs by creating machine learning model in Python to predict inventory, sales, and shipment.",
       ],
