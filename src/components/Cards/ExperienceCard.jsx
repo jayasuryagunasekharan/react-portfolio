@@ -138,10 +138,10 @@ const ExperienceCard = ({ experience }) => {
                     </Date>
                 </CompanyInfo>
             </Header>
-            <SectionTitle>
+            {/* <SectionTitle>
                 <FaTools />
                 Responsibilities
-            </SectionTitle>
+            </SectionTitle> */}
             <Description>
                 <DescriptionList>
                     {experience.desc.map((desc, index) => (
