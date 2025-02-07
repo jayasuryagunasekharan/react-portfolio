@@ -47,7 +47,7 @@ function App() {
           <StarCanvas />
           <HeroSection />
           <Wrapper>
-            <Skills />
+            {/* <Skills /> */}
             <Experience />
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />

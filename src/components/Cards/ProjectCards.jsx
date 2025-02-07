@@ -150,15 +150,15 @@ const ProjectCards = ({project,setOpenModal}) => {
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             {project.pinned && <PinIcon title="Pinned Project" />}
             <Image src={project.image}/>
-            <Tags>
+            {/* <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag key={index}>{tag}</Tag>
                 ))}
-            </Tags>
+            </Tags> */}
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
-                <ProjectDescription description={project?.description} />
+                {/* <ProjectDescription description={project?.description} /> */}
             </Details>
             <Members>
                 {project.member?.map((member, index) => (
