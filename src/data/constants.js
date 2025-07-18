@@ -332,10 +332,10 @@ export const experiences = [
     desc: [],
     achievements: [
       "Managed budget, sales, and inventory, consistently achieving weekly profit targets.",
-      "Implemented efficient inventory management strategies, resulting in significant cost savings.",
+      // "Implemented efficient inventory management strategies, resulting in significant cost savings.",
       "Provided exceptional customer support and service, enhancing customer satisfaction and loyalty.",
-      "Conducted thorough data analysis to optimize business operations and decision-making processes.",
-      "Maintained and improved system performance, ensuring smooth business operations."
+      // "Conducted thorough data analysis to optimize business operations and decision-making processes.",
+      // "Maintained and improved system performance, ensuring smooth business operations."
     ],
     skills: [
       "Python",
