@@ -1203,6 +1203,18 @@ export const projects = [
     webapp: "https://drive.google.com/file/d/1-IYSAfMGsl-y7N6cvPEQ_9pFICiMnSVX/view?usp=sharing",
     pinned: true
   },
+  {
+    id: 58,
+    title: "BattleShip",
+    date: "",
+    description: "",
+    image: "",
+    tags: [""],
+    category: "Games",
+    github: "https://github.com/jayasuryagunasekharan/",
+    webapp: "https://jayasuryagunasekharan.github.io/battleship-app/",
+    pinned: true
+  },
 ];
 
 export const TimeLineData = [
