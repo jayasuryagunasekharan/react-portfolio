@@ -1,5 +1,6 @@
 // src/data/constants.js
 import SocialMediaAppArch from '../../src/architecture/social-media-app-arch.svg';
+import FinderServiceImage from '../../src/images/finder-service-image.png';
 
 export const Bio = {
   name: "Jayasurya Gunasekharan",
@@ -555,16 +556,16 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Loan System",
-    date: "Jan. 2022 - May 2022",
+    title: "Fin Expert Service",
+    date: "Dec 2024 - Jan 2025",
     description:
-      "Engineered large-scale web application using Apex/Java, SQL, HTML, CSS, leading to 15% increase in loan sanctions. Leveraged SQL for data preprocessing and enhanced user experience by integrating insights with D3.js, reports, and dashboards. Implemented robust testing strategies, ensuring stable and functional loan processing system for 10k users.",
-    image: "https://www.cflowapps.com/wp-content/uploads/2022/12/lon_mangmntprcs.jpg",
-    tags: ["Apex", "Java", "SQL", "JavaScript", "HTML", "CSS"],
+      "Connects users with verified financial experts who can help you achieve your financial goals. Get personalized advice and guidance from professionals you can trust.",
+    image: "FinderServiceImage",
+    tags: ["Python", "React", "PostgreSQL"],
     category: "SWE",
     github: "https://github.com/jayasuryagunasekharan/",
-    webapp: "",  // Add web app link if available
-    pinned: false,
+    webapp: "https://finder-service-frontend.vercel.app/",  
+    pinned: true,
   },
   {
     id: 6,
