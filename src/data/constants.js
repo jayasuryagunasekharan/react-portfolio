@@ -10,7 +10,7 @@ export const Bio = {
     "Problem Solver",
   ],
   description:
-    "Enthusiastic and inquisitive programmer with a Master's in Computer Science and a Bachelor's in Electronics and Communications Engineering, skilled in full-stack development, analytics, and machine learning. Seeking opportunities to leverage my coding expertise, strong leadership abilities, teamwork skills, and time management proficiency to make meaningful contributions to software projects while continuing to grow and learn from experienced engineering team members.",
+    "Enthusiastic and inquisitive programmer with a Master's in Computer Science and a Bachelor's in Electronics and Telecommunications, skilled in full-stack development, analytics, and machine learning. Seeking opportunities to leverage my coding expertise, strong leadership abilities, teamwork skills, and time management proficiency to make meaningful contributions to software projects while continuing to grow and learn from experienced engineering team members.",
   github: "https://github.com/jayasuryagunasekharan",
   resume:
     "https://jayasuryagunasekharan.github.io/",
