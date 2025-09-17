@@ -324,27 +324,28 @@ export const experiences = [
       "Project Management",
       "Business Impact",
     ],
-  }, {
-    id: 1,
-    img: "https://kalachandjis.com/wp-content/uploads/2025/01/Kalachandjis-Logo-Color.svg",
-    role: "Sofwtare Enginer / Analyst",
-    company: "Kalachandji's",
-    date: "July 2024 - Present",
-    desc: [],
-    achievements: [
-      "Managed budget, sales, and inventory, consistently achieving weekly profit targets.",
-      // "Implemented efficient inventory management strategies, resulting in significant cost savings.",
-      "Provided exceptional customer support and service, enhancing customer satisfaction and loyalty.",
-      // "Conducted thorough data analysis to optimize business operations and decision-making processes.",
-      // "Maintained and improved system performance, ensuring smooth business operations."
-    ],
-    skills: [
-      "Python",
-      "Machine Learning",
-      "Data Analysis",
-      "Inventory Management",
-    ],
   },
+  // }, {
+  //   id: 1,
+  //   img: "https://kalachandjis.com/wp-content/uploads/2025/01/Kalachandjis-Logo-Color.svg",
+  //   role: "Sofwtare Enginer / Analyst",
+  //   company: "Kalachandji's",
+  //   date: "July 2024 - Present",
+  //   desc: [],
+  //   achievements: [
+  //     "Managed budget, sales, and inventory, consistently achieving weekly profit targets.",
+  //     // "Implemented efficient inventory management strategies, resulting in significant cost savings.",
+  //     "Provided exceptional customer support and service, enhancing customer satisfaction and loyalty.",
+  //     // "Conducted thorough data analysis to optimize business operations and decision-making processes.",
+  //     // "Maintained and improved system performance, ensuring smooth business operations."
+  //   ],
+  //   skills: [
+  //     "Python",
+  //     "Machine Learning",
+  //     "Data Analysis",
+  //     "Inventory Management",
+  //   ],
+  // },
   {
     id: 2,
     img: "https://stetig.in/images/Logo.png",
